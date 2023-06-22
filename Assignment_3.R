@@ -1,7 +1,7 @@
 # Assignment 3 - Hangman Game
 # By: Sanari Wickramaratne
 
-# Load word list from txt. file within Assignment_3 Repository
+# Load word list found in txt. file within Assignment_3 Repository
 wordlist <- readLines("Dictionary.txt")
 
 # Choose a random word from the list
@@ -13,11 +13,11 @@ word_length <- nchar(secret_word)
 # Set the maximum number of wrong guesses
 max_wrong_guesses <- 10
 
-# Initialize variables to store guessed letters during game and the number of wrong guesses.
+# Initialize variables to store guessed letters during game and the number of wrong guesses
 guessed_letters <- character(0)
 wrong_guesses <- 0
 
-# Function to display the current state of the game
+# Function to visually display the current state of the game for user
 display_state <- function(secret_word, guessed_letters, wrong_guesses, max_wrong_guesses) {
   revealed_word <- ""
   for (letter in strsplit(secret_word, "")[[1]]) {
@@ -41,7 +41,7 @@ valid_letter <- function(input) {
 cat("Welcome to Sanari's Hangman Game! I hope you enjoy playing! \n")
 cat("The word has", word_length, "letters. You are allowed 20 guesses in total. Good luck!!\n")
 
-# Create a while loop to prompt user to enter a letter until the game is over.
+# Create a while loop to prompt user to enter a letter until the game is over
 while (wrong_guesses < max_wrong_guesses) {
   display_state(secret_word, guessed_letters, wrong_guesses, max_wrong_guesses)
 
@@ -54,7 +54,7 @@ while (wrong_guesses < max_wrong_guesses) {
     cat("Please enter a valid letter.\n")
     next
   }
-
+  
   # Converting the guess to lowercase
   guess <- tolower(guess)
 
