@@ -54,5 +54,8 @@ while (TRUE) {
 }
 }
 
+# Converting the guess to lowercase
+guess <- tolower(guess)
+
 
 
