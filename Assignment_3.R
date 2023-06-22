@@ -13,8 +13,6 @@
 # * - Notify user about correct letters/wrong letters and remaining tries.
 # * - Provide visual cue of how user is progressing.
 
-
-
 # 1. Reading the word list (dictionary) from project directory. Please find txt. file below in project directory in GitHub and save it to your working directory.
 word_list <- readLines("Dictionary.txt")
 
