@@ -50,7 +50,7 @@ while (wrong_guesses < max_wrong_guesses) {
   guess <- tolower(guess)
 
   # Check if the input is a valid letter
-  if (!isvalid_letter(guess)) {
+  if (!valid_letter(guess)) {
     cat("Please enter a valid letter.\n")
     next
   }
