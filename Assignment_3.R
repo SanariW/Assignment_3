@@ -38,7 +38,7 @@ valid_letter <- function(input) {
 }
 
 # Introduction to game
-cat("Welcome to Sanari's Hangman Game! I hope you enjoy playing! \n")
+cat("Welcome to Sanari's Hangman Game! The category is cities within Ontario, Canada. I hope you enjoy playing! \n")
 cat("The word has", word_length, "letters. You are allowed 20 guesses in total. Good luck!!\n")
 
 # Create a while loop to prompt user to enter a letter until the game is over
