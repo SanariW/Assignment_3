@@ -1,7 +1,7 @@
-# Assignment 3 - Hangman
+# Assignment 3 - Hangman Game
 # By: Sanari Wickramaratne
 
-# Load word list from file
+# Load word list from txt. file within Assignment_3 Repository
 wordlist <- readLines("Dictionary.txt")
 
 # Choose a random word from the list
@@ -11,7 +11,7 @@ secret_word <- tolower(sample(wordlist, 1))
 word_length <- nchar(secret_word)
 
 # Set the maximum number of wrong guesses
-max_wrong_guesses <- 10
+max_wrong_guesses <- 20
 
 # Initialize variables to store guessed letters during game and the number of wrong guesses.
 guessed_letters <- character(0)
@@ -84,3 +84,4 @@ if (wrong_guesses == max_wrong_guesses) {
   displayState(secret_word, guessed_letters, wrong_guesses, max_wrong_guesses)
   cat("Sorry, you lost. The word was:", secret_word, "\n")
 }
+
