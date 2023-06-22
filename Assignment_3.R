@@ -2,6 +2,7 @@
 # By: Sanari Wickramaratne
 
 # Load word list found in txt. file within Assignment_3 Repository
+# Must save this file within working directory
 wordlist <- readLines("Dictionary.txt")
 
 # Choose a random word from the word list
