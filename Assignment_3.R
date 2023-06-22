@@ -22,16 +22,10 @@ valid_command <- function(input) {
 
 # Function to reset the game variables
 reset_game <- function() {
-
-#To get the word from wordlist 
-  secret_word <- get_secret_word(wordlist)
-
-# Get the length of the secret word
-  word_length <- nchar(secret_word)
-
-# Initialize variables to store guessed letters during game and the number of wrong guesses
-  guessed_letters <- character(0)
-  wrong_guesses <- 0
+secret_word <<- get_secret_word(wordlist) # To get the word from wordlist 
+  word_length <<- nchar(secret_word) # Get the length of the secret word
+  guessed_letters <<- character(0) # Initialize variables to store guessed letters during game and the number of wrong guesses
+  wrong_guesses <<- 0
 }
 
 # Visually display the current state of the game for the user
